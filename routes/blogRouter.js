@@ -28,8 +28,6 @@ router.get("/:id", jsonParser, (req, res) => {
     });
 });
 
-
-
 router.post("/", jsonParser, (req, res) => {
     const requiredFields = ["title", "content", "author"];
     requiredFields.forEach(function(field){
